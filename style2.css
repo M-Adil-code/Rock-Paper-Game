@@ -1,16 +1,18 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     color: white;
 }
-body{
+
+body {
     background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-    
+
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
 }
-header{
+
+header {
     margin: auto;
     width: 400px;
     display: flex;
@@ -22,14 +24,16 @@ header{
     padding: 20px;
     font-weight: 500;
 }
-header .side1{
+
+header .side1 {
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
-header .side2{
+
+header .side2 {
     display: block;
     height: 80px;
     background: rgb(255, 255, 255);
@@ -42,71 +46,64 @@ header .side2{
     align-items: center;
     justify-content: space-evenly;
 }
-header .side2 :first-child{
+
+header .side2 :first-child {
     background: white;
     font-size: 12px;
     color: black;
     font-weight: 600;
     text-align: center;
     color: hsl(229, 64%, 46%);
-} 
-header .side2 :nth-child(2){
-    color: black;
-    font-size: 45px;
-    
 }
 
-main{
+header .side2 :nth-child(2) {
+    color: black;
+    font-size: 45px;
+
+}
+
+main {
     height: 250px;
     min-width: 300px;
     max-width: 400px;
-    
+
     margin: 80px auto;
     position: relative;
-   
+
 }
-main .firststep{
-    
+
+main .firststep {
+
     display: flex;
     height: 100%;
     width: 100%;
     position: relative;
-    
-   
-   
+
+
+
 
 }
-main .firststep .riangle{
-   
+
+main .firststep .riangle {
+
     height: 300px;
     width: 350px;
-   position: absolute;
-   top: 0px;
-   left: calc(50% - 350px/2 );
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 350px/2);
 }
 
-.img img{
+.img img {
     width: 50px;
     height: 50px;
-   
-    
+
+
 }
-.rock{
-   
-   
-    width: 50px;
-    height: 50px;
-}
-.spock{
-    width: 50px;
-    height: 50px;
-}
-.lizard{
-    width: 50px;
-    height: 50px;
-}
-.imgback{
-   
+
+
+
+.imgback {
+
     width: 100px;
     height: 100px;
     background: wheat;
@@ -114,94 +111,107 @@ main .firststep .riangle{
     padding: 17px;
     position: absolute
 }
-.imgback:has(.rock){
+
+.imgback:has(.rock) {
     border: 10px solid red;
     top: calc(100% - 25px);
     right: 25px;
 }
 
-.imgback:has(.paper){
+.imgback:has(.paper) {
     border: 10px solid blue;
     top: calc(50% - 50px);
     left: calc(100% - 55px);
 }
 
-.imgback:has(.scissors){
+.imgback:has(.scissors) {
     border: 10px solid green;
     top: -25px;
     left: calc(100%/2 - 50px);
 }
-.imgback:has(.spock){
+
+.imgback:has(.spock) {
     border: 10px solid goldenrod;
     left: 30px;
-    top:calc(100% - 25px);
+    top: calc(100% - 25px);
 }
-.imgback:has(.lizard){
+
+.imgback:has(.lizard) {
     border: 10px solid blueviolet;
     top: calc(50% - 50px);
     left: calc(0% - 25px);
-    
+
 }
 
-.secondstep{
+.secondstep {
     display: none;
-    
+
     justify-content: space-evenly;
-    
-  
+
+
     transition-property: all;
     transition-duration: 2s;
     transition-timing-function: linear;
 }
-.secondstep .s1{
+
+.secondstep .s1 {
     width: 93px;
 }
-.secondstep .s1 p, .secondstep .s2 p{
+
+.secondstep .s1 p,
+.secondstep .s2 p {
     display: block;
     font-size: 12px;
     margin-bottom: 20px;
 }
 
-.result{
+.result {
     width: 100px;
-    
+
     height: 100px;
     overflow: hidden;
-    
-   transition-property: width;
-   transition-duration: 0.09s;
-   transition-timing-function: linear;
+
+    transition-property: width;
+    transition-duration: 0.09s;
+    transition-timing-function: linear;
 
 
 }
-.result p{
+
+.result p {
     font-size: 20px;
     margin-bottom: 20px;
     margin-top: 10px;
-    
+
 }
-.result button{
+
+.result button {
     background: white;
     color: red;
     padding: 10px;
     border-radius: 10px;
 }
-.secondstep img{
+
+.secondstep img {
     height: 50px;
     width: 50px;
 }
-.secondstep .imgback{
-   border: 10px solid red;
+
+.secondstep .imgback {
+    border: 10px solid red;
 
 }
-.s2 .imgback{
+
+.s2 .imgback {
     border: 10px solid blue;
 }
-.imgback2{
+
+.imgback2 {
     background: black;
-    
+
 }
-.rules{
+
+.rules {
     background: white;
     color: black;
     padding: 10px;
@@ -209,20 +219,22 @@ main .firststep .riangle{
     position: sticky;
     left: 93%;
     bottom: 20px;
-   
+
     color: rgb(228, 23, 23);
 
 }
-.rules:hover{
+
+.rules:hover {
     background: rgb(223, 222, 222);
     color: red;
 }
-.rulediv{
+
+.rulediv {
     display: block;
     min-width: 350px;
     max-width: 400px;
     height: auto;
-   
+
     background: white;
     padding: 50px 50px;
     position: absolute;
@@ -230,7 +242,8 @@ main .firststep .riangle{
     left: calc(100%-(350px / 2));
     z-index: 1;
 }
-.closerule{
+
+.closerule {
     background: rgb(219, 219, 217);
     position: absolute;
     top: 1px;
@@ -238,19 +251,56 @@ main .firststep .riangle{
     padding: 10px;
 
 }
-.closerule:hover{
+
+.closerule:hover {
     background: rgb(185, 185, 184);
     color: black;
-    
+
 }
 
-.previewgame{
+.previewgame {
     background: rgb(248, 248, 248);
     height: 150vh;
     width: 100%;
     display: block;
 
-  
-    
-   
+}
+
+@media screen and (max-width:700px) {
+
+    header {
+        width: 300px;
+        scale: 0.9;
+    }
+
+    main {
+        max-width: 250px;
+        scale: 0.7
+    }
+
+    .imgback {
+        scale: 0.8;
+    }
+
+    .imgback:has(.lizard) {
+        border: 10px solid blueviolet;
+        top: calc(50% - 50px);
+        left: calc(0% - 40px);
+
+    }
+
+    .imgback:has(.rock) {
+        border: 10px solid red;
+        top: calc(100% - 15px);
+        right: 15px;
+    }
+
+    .imgback:has(.spock) {
+        border: 10px solid goldenrod;
+        left: 15px;
+        top: calc(100% - 15px);
+    }
+
+
+
 }
