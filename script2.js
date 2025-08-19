@@ -59,33 +59,33 @@ async function  userslect(id,image){
 
      let any=Math.round(Math.random()*4);
     let comslect;
-    compickimg.parentElement.style.background='black'
-    compickimg.parentElement.style.borderColor='black'
+    compickimg.style.background='black'
+    compickimg.style.borderColor='black'
     resultdiv.style.width='0px';
 
     await setTimeout(()=>{
-        compickimg.parentElement.style.background='wheat'
-       compickimg.parentElement.style.borderColor='red'
+        compickimg.style.background='wheat'
+       compickimg.style.borderColor='red'
 
          
     if(any==0){
-        compickimg.src=`images/icon-rock.svg`
+        compickimg.innerHTML=`<img src="images/icon-rock.svg" alt="" class="">`
         comslect='rock'
     }
     else if(any==1){
-        compickimg.src=`images/icon-paper.svg`
+        compickimg.innerHTML=`<img src="images/icon-paper.svg" >`
          comslect='paper'
     }
     else if(any==2){
-        compickimg.src=`images/icon-scissors.svg`
+        compickimg.innerHTML=`<img src="images/icon-scissors.svg" >`
          comslect='scissor'
     }
     else if(any==3){
-        compickimg.src=`images/icon-spock.svg`
+        compickimg.innerHTML=`<img src="images/icon-spock.svg" >`
          comslect='spock'
     }
     else{
-        compickimg.src=`images/icon-lizard.svg`
+        compickimg.innerHTML=`<img src="images/icon-lizard.svg" >`
         comslect='lizard'
     }
     calculateresult(id,comslect)
@@ -106,13 +106,13 @@ function calculateresult(you,com){
     if(you=='rock'){
         if(com=='paper'){
          result.innerHTML='Loss'
-         score--;
+        
          comscore++;
         }
         if(com=='scissor'){
          result.innerHTML='Win'
          score++;
-         comscore--;
+        
  
         }
         if(com=='rock'){
@@ -120,13 +120,13 @@ function calculateresult(you,com){
         }
         if(com=='spock'){
             result.innerHTML='Loss'
-            score--
+            
             comscore++;
         }
         if(com=='lizard'){
             result.innerHTML='Win'
             score++;
-            comscore--;
+           
         }
         
      }
@@ -137,23 +137,23 @@ function calculateresult(you,com){
             }
             if(com=='scissor'){
              result.innerHTML='Loss'
-             score--
+             
              comscore++;
      
             }
             if(com=='rock'){
              result.innerHTML='Win'
              score++;
-             comscore--;
+             
             }
             if(com=='spock'){
                 result.innerHTML='Win'
                 score++;
-                comscore--;
+                
             }
             if(com=='lizard'){
                 result.innerHTML='Loss'
-                score--;
+                
                 comscore++;
             }
      }
@@ -162,7 +162,7 @@ function calculateresult(you,com){
          if(com=='paper'){
              result.innerHTML='Win'
              score++;
-             comscore--;
+             
             }
             if(com=='scissor'){
              result.innerHTML='Draw'
@@ -170,18 +170,18 @@ function calculateresult(you,com){
             }
             if(com=='rock'){
              result.innerHTML='Loss'
-             score--;
+             
              comscore++;
             }
             if(com=='spock'){
                 result.innerHTML='Loss'
-                score--;
+                
                 comscore++;
             }
             if(com=='lizard'){
                 result.innerHTML='Win'
                 score++;
-                comscore--;
+                
             }
 
     }
@@ -189,19 +189,18 @@ function calculateresult(you,com){
         
         if(com=='paper'){
             result.innerHTML='Loss'
-            score--;
+            
             comscore++;
            }
            if(com=='scissor'){
             result.innerHTML='Win'
             score++;
-            comscore--;
-    
+           
            }
            if(com=='rock'){
             result.innerHTML='Win'
             score++;
-            comscore--;
+           
            }
            if(com=='spock'){
                result.innerHTML='Draw'
@@ -209,7 +208,7 @@ function calculateresult(you,com){
            }
            if(com=='lizard'){
                result.innerHTML='loss'
-               score--;
+              
                comscore++;
            }
 
@@ -219,23 +218,23 @@ function calculateresult(you,com){
     if(com=='paper'){
         result.innerHTML='Win'
         score++;
-        comscore--;
+        
        }
        if(com=='scissor'){
         result.innerHTML='Loss'
-        score--;
+        
         comscore++;
 
        }
        if(com=='rock'){
         result.innerHTML='Loss'
-        score--;
+       
         comscore++;
        }
        if(com=='spock'){
            result.innerHTML='Win'
            score++;
-           comscore--;
+           
           
        }
        if(com=='lizard'){
